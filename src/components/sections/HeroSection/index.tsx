@@ -1,13 +1,14 @@
 "use client";
 
 import React from "react";
+import { useRef } from "react";
 import ImageCard from "@/components/sections/HeroSection/ImageCard";
-import { animate, motion, useMotionValue } from "framer-motion";
 import { useEffect } from "react";
-import useMeasure from "react-use-measure";
 import ArrowUpRight from "@/icons/arrow-up-right";
-import styles from "./index.module.css";
-import Image from "next/image";
+
+type ExtendedHTMLDivElement = HTMLDivElement & {
+  position?: number;
+};
 
 const HeroSection = () => {
   const images = [
@@ -37,25 +38,55 @@ const HeroSection = () => {
     },
   ];
 
-  const duration = 25; // Use a single duration for the animation
-  const xTranslation = useMotionValue(0);
-  let [ref, { width }] = useMeasure();
+  const scrollRef = useRef<ExtendedHTMLDivElement>(null);
+
+  const animate = () => {
+    if (scrollRef.current) {
+      const element = scrollRef.current as ExtendedHTMLDivElement;
+      if (typeof element.position === "number") {
+        // Ensure position is initialized
+        element.style.transform = `translateX(${element.position}px)`;
+        element.position -= 2; // Adjust this value to control the speed
+
+        if (Math.abs(element.position) >= element.scrollWidth / 2) {
+          element.position = 0;
+        }
+
+        requestAnimationFrame(animate);
+      }
+    }
+  };
 
   useEffect(() => {
-    const finalPosition = -width / 2 - 8;
-    const controls = animate(xTranslation, [0, finalPosition], {
-      ease: "linear",
-      duration: duration,
-      repeat: Infinity,
-      repeatType: "loop",
-      repeatDelay: 0,
-    });
+    const element = scrollRef.current;
+    if (element) {
+      element.position = 0; // Initialize position
+      animate();
+    }
 
-    return controls?.stop;
-  }, [xTranslation, duration, width]);
+    return () => {
+      if (element) {
+        element.position = undefined; // Cleanup position to avoid memory leaks
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (scrollRef.current) {
+      const element = scrollRef.current;
+      element.position = 0; // Initial position
+      animate();
+    }
+
+    return () => {
+      if (scrollRef.current) {
+        scrollRef.current.position = undefined; // Cleanup position
+      }
+    };
+  }, []);
 
   return (
-    <div className="w-full bg-brown text-white mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="w-full overflow-x-hidden bg-brown text-white mx-auto px-4 sm:px-6 lg:px-8">
       <header className="flex justify-between items-center py-6">
         <h1 className="text-4xl font-extrabold">Thebes.</h1>
         <button className="flex font-xl justify-center items-center bg-transparent text-white font-semibold py-4 px-12 border-2 border-white rounded-full">
@@ -76,15 +107,14 @@ const HeroSection = () => {
           <span className="font-2xl">Download App</span>
           <ArrowUpRight strokeWidth={2.5} className="w-5 h-5 font-bold ml-2" />
         </button>
-        <motion.div
-          className="absolute left-0 flex gap-4"
-          style={{ x: xTranslation }}
-          ref={ref}
+        <div
+          className=" overflow-hidden mt-20  left-0 flex gap-12"
+          ref={scrollRef}
         >
-          {[...images, ...images].map((item, idx) => (
+          {images.concat(images).map((item, idx) => (
             <ImageCard image={item.url} key={idx} />
           ))}
-        </motion.div>
+        </div>
       </main>
     </div>
   );

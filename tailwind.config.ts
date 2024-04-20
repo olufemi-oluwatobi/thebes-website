@@ -13,9 +13,14 @@ const config: Config = {
     },
     colors: {
       brown: "#0F0A0A",
+      red: "#E31D1C",
       primary: "#D0BCFF",
       white: "#FFFFFF",
       black: "#000000",
+      gray: {
+        100: "#E6E6E6",
+        200: "#939197",
+      },
     },
     extend: {
       backgroundImage: {

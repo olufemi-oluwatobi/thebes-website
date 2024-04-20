@@ -1,0 +1,33 @@
+/* ContestCalendarItem.module.css */
+
+.contestImageContainer {
+  overflow: hidden;
+  transition: margin 0.3s ease-in-out;
+}
+
+.image {
+  transform: translateX(-100%); /* Start outside the view */
+  transition: transform 0.3s ease-in-out;
+}
+
+.contestItem {
+  transition: margin-left 0.3s ease-in-out; /* Smooth transition for the margin */
+}
+
+@media (hover: hover) {
+  .contestItem:hover .image {
+    transform: translateX(0); /* Slide in on hover */
+  }
+  .contestItem:hover .contestText {
+    margin-left: 20px; /* Adjust this value based on the width of the image */
+  }
+}
+
+@media (hover: none) {
+  .image {
+    transform: translateX(0); /* Always visible on mobile as there is no hover */
+  }
+  .contestText {
+    margin-left: 20px; /* Adjust this value based on the width of the image */
+  }
+}

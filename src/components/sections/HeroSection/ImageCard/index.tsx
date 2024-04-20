@@ -1,6 +1,5 @@
-import { motion } from "framer-motion";
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 interface CardProps {
   image: string;
@@ -9,16 +8,13 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ image }) => {
   if (!image) {
     console.error("Image source is undefined.");
-    return null; // Or render some fallback UI
+    return null;
   }
 
   return (
-    <motion.div
-      className="relative overflow-hidden h-[200px] min-w-[200px] bg-slate-400 rounded-xl flex justify-center items-center"
-      key={image}
-    >
+    <div className="relative overflow-hidden h-[350px] min-w-[400px] bg-slate-400 rounded-xl flex justify-center items-center">
       <Image src={image} alt={`Image of ${image}`} layout="fill" />
-    </motion.div>
+    </div>
   );
 };
 

@@ -1,0 +1,35 @@
+/* VideoCard.module.css */
+.recDot {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: red;
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  .recIndicator {
+    position: absolute;
+    top: -0.9rem; /* Adjusted for half height of the REC indicator to hang off the edge */
+    right: -1.0rem; /* Adjusted for half width of the REC indicator to hang off the edge */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0.25rem 1rem;
+    border-radius: 9999px; /* pill shape */
+    font-size: 0.75rem; /* equivalent to text-xs */
+    font-weight: bold;
+    z-index: 10; /* Ensure it's above the container box */
+    /* Additional styles may be required for exact alignment */
+  }
+  
