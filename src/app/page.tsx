@@ -2,14 +2,27 @@ import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/sections/AboutSection";
 import HowItWorksSection from "@/components/HowItWorks";
 import Calendar from "@/components/ContestCalender";
+import FAQSection from "@/components/sections/FaqSection";
+import Footer from "@/components/Footer";
+import FeatureContestBanner from "@/components/FeatureContestBanner";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col ">
+    <main className="flex bg-white min-h-screen flex-col ">
       <HeroSection />
       <AboutSection />
       <HowItWorksSection />
       <Calendar />
+      <FAQSection />
+      <div className="relative w-full mt-8">
+        <div className="w-full flex justify-center bg-black bg-opacity-0 -mb-[35vh] z-20">
+          <FeatureContestBanner />
+        </div>
+
+        <div className="w-full pt-20 z-10">
+          <Footer />
+        </div>
+      </div>
     </main>
   );
 }

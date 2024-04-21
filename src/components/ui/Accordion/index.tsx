@@ -1,4 +1,4 @@
-// components/AccordionItem.tsx
+"use client";
 import React, { useState, useRef } from "react";
 
 interface AccordionItemProps {
@@ -15,16 +15,19 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content }) => {
   };
 
   return (
-    <li className="bg-white my-2 shadow-lg">
+    <li className="bg-white w-full my-2 shadow-lg">
       <h2
         onClick={toggleAccordion}
-        className="flex justify-between items-center font-semibold p-3 cursor-pointer"
+        className={`flex ${
+          isOpen && " border-l-4 border-purple"
+        } justify-between items-center font-semibold p-6 cursor-pointer`}
       >
-        <span>{title}</span>
+        <span className=" font-bold text-xl font-sans ">{title}</span>
         <svg
-          className={`fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500 ${
+          className={`fill-current text-purple h-6 w-6 transform transition-transform duration-500 ${
             isOpen ? "rotate-180" : ""
           }`}
+          stroke="#836CBB"
           strokeWidth={2}
           viewBox="0 0 20 20"
         >
@@ -40,9 +43,9 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content }) => {
         style={{
           maxHeight: isOpen ? `${contentRef.current?.scrollHeight}px` : "0",
         }}
-        className="border-l-2 border-purple-600 overflow-hidden transition-max-height duration-500"
+        className="border-l-4 border-purple w-full overflow-hidden transition-max-height duration-500"
       >
-        <p className="p-3 text-gray-900">{content}</p>
+        <p className="px-6 pb-6 text-gray-900">{content}</p>
       </div>
     </li>
   );

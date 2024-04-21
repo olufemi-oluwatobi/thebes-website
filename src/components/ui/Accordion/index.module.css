@@ -1,0 +1,43 @@
+/* AccordionItem.module.css */
+.accordionHeader {
+    display: flex;
+    justify-content: between;
+    align-items: center;
+    font: semibold;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .accordionHeaderOpen {
+    border-left-width: 0.25rem;
+    border-left-style: solid;
+    border-left-color: #836CBB; /* Your border color */
+    animation: pulseBorder 2s infinite;
+  }
+  
+  @keyframes pulseBorder {
+    0% {
+      border-left-color: transparent;
+    }
+    50% {
+      border-left-color: #836CBB; /* Your border color */
+    }
+    100% {
+      border-left-color: transparent;
+    }
+  }
+  
+  .contentContainer {
+    border-left-width: 0.25rem;
+    border-left-style: solid;
+    border-left-color: #836CBB; /* Your border color */
+    width: 100%;
+    overflow: "hidden";
+    transition: max-height 0.5s;
+  }
+  
+  .content {
+    padding: 0 1.5rem 1.5rem;
+  }
+  
