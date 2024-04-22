@@ -28,11 +28,11 @@ const faqData = [
 
 const FAQSection: React.FC = () => {
   return (
-    <main className="bg-white flex flex-col items-center mt-10 py-10 pb-20  px-5">
+    <main className="bg-white flex flex-col items-center py-10 pb-20  px-5">
       <div className=" font-sans text-xl mb-3 text-purple font-semibold text-left ">
         FAQ
       </div>
-      <div className=" md:mb-20  font-bold text-3xl w-full text-left   md:text-6xl   font-serif ">
+      <div className=" md:mb-20  font-bold text-4xl w-full text-center md:text-left   md:text-6xl   font-serif ">
         {"We\u0027ve Got Answers To Your Questions"}
       </div>
       <div className="flex w-full justify-center items-start my-2">

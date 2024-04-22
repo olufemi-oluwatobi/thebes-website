@@ -89,18 +89,18 @@ const HeroSection = () => {
     <div className="w-full overflow-x-hidden bg-brown text-white mx-auto px-4 sm:px-6 lg:px-8">
       <header className="flex justify-between items-center py-6">
         <h1 className="text-4xl font-serif font-extrabold">Thebes.</h1>
-        <button className="flex font-xl font-sans justify-center items-center bg-transparent text-white font-semibold py-4 px-12 border-2 border-white rounded-full">
+        <button className="flex font-xl font-sans justify-center items-center bg-transparent text-white font-semibold py-4 px-8 md:px-12 border-2 border-white rounded-full">
           Join Waitlist
           <ArrowUpRight strokeWidth={2.5} className="w-5 h-5 font-bold ml-2" />
         </button>
       </header>
       <main className="flex flex-col text-center items-center justify-center mt-10 mb-20">
         <h4>
-          <span className="text-white font-bold text-xl mb-4 capitalize font-sans">
+          <span className="text-white font-bold text-lg md:text-xl mb-4 capitalize font-sans">
             WELCOME TO THEBES
           </span>
         </h4>
-        <h2 className="text-8xl mt-4 w-2/5 font-extrabold mb-6 font-serif leading-tight">
+        <h2 className="text-5xl md:text-8xl mt-4 md:w-2/5 font-extrabold mb-6 font-serif leading-tight">
           The Social Contest Network
         </h2>
         <button className="flex font-semibold font-xl justify-center items-center mt-4 bg-primary text-brown py-4 px-12  rounded-full">
@@ -108,7 +108,7 @@ const HeroSection = () => {
           <ArrowUpRight strokeWidth={2.5} className="w-5 h-5 font-bold ml-2" />
         </button>
         <div
-          className=" overflow-hidden mt-32 left-0 flex gap-12"
+          className=" overflow-hidden mt-12 md:mt-32 left-0 flex gap-12"
           ref={scrollRef}
         >
           {images.concat(images).map((item, idx) => (

@@ -12,7 +12,7 @@ const Card: React.FC<CardProps> = ({ image }) => {
   }
 
   return (
-    <div className="relative overflow-hidden h-[350px] min-w-[400px] bg-slate-400 rounded-xl flex justify-center items-center">
+    <div className="relative overflow-hidden h-[200px] min-w-[250px] md:h-[350px] md:min-w-[400px] bg-slate-400 rounded-xl flex justify-center items-center">
       <Image src={image} alt={`Image of ${image}`} layout="fill" />
     </div>
   );

@@ -38,11 +38,13 @@ const ScheduleItem: React.FC<ScheduleItemProps> = ({
         <div className="ml-4">
           {placeholderMode ? (
             <div className="flex">
-              <div className="w-32 h-4 bg-[#F1F1F1] rounded-md animate-pulse" />
-              <div className="w-12 h-4 ml-2 bg-[#F1F1F1] rounded-md animate-pulse" />
+              <div className="w-12 md:w-32 h-4 bg-[#F1F1F1] rounded-md animate-pulse" />
+              <div className="w-4 md:w-12 h-4 ml-2 bg-[#F1F1F1] rounded-md  animate-pulse" />
             </div>
           ) : (
-            <span className="text-md font-bold font-serif ">{contestName}</span>
+            <span className=" text-sm md:text-md font-bold font-serif ">
+              {contestName}
+            </span>
           )}
         </div>
       </div>
@@ -64,7 +66,7 @@ const ScheduleItem: React.FC<ScheduleItemProps> = ({
               className="rounded-full"
             />
 
-            <span className="text-sm ml-2 uppercase text-[#939197] ">
+            <span className=" text-[12px] md:text-sm ml-2 uppercase text-[#939197] ">
               {date}
             </span>
           </div>

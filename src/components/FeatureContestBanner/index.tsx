@@ -5,7 +5,7 @@ import StarButtonIcon from "@/icons/star_button_icon";
 
 const FeatureContestBanner = () => {
   return (
-    <div className="relative bg-black bg-opacity-0 rounded-3xl shadow-xl w-[1500px] h-[800px] overflow-hidden text-white">
+    <div className="relative bg-black bg-opacity-0 rounded-3xl shadow-xl w-[1500px] h-[600px] md:h-[800px] overflow-hidden text-white">
       <Image
         src="https://thebesuserupload.s3.us-east-2.amazonaws.com/site_assets/feature_contest.png"
         alt="Streetwear Fashion Design Contest"
@@ -16,8 +16,8 @@ const FeatureContestBanner = () => {
       />
 
       {/* Overlay with gradient that fades from left (black) to right (transparent) */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent rounded-3xl">
-        <div className="flex flex-col justify-center items-start p-8 h-full">
+      <div className="absolute inset-0  bg-gradient-to-b md:bg-gradient-to-r from-black via-black/100 md:via-black/60 to-transparent rounded-3xl">
+        <div className="flex flex-col justify-center items-start py-8 p-4 md:p-8 h-full">
           <div className="bg-primary flex items-center text-brown font-bold font-sans text-sm uppercase px-6 py-4 rounded-full mb-4 max-w-max">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -35,16 +35,16 @@ const FeatureContestBanner = () => {
           </div>
           <div className="w-full flex justify-between ">
             <div className=" ">
-              <h1 className="text-[4rem] font-serif leading-tight font-bold mb-3 w-[70%]">
+              <h1 className=" text-3xl md:text-[4rem] font-serif leading-tight font-bold mb-3 w-full md:w-[70%]">
                 Streetwear Fashion Design Contest
               </h1>
-              <p className="font-bold font-sans text-gray-200 mb-8 mt-2 w-[40%]">
+              <p className="font-bold font-sans text-gray-200 mb-8 mt-2 w-full md:w-[40%]">
                 Join our community of creators. Download Thebes now and shine on
                 the
                 {"world's"} most inclusive Social Contest Network!
               </p>
             </div>
-            <div>
+            <div className="hidden md:flex ">
               <StarButtonIcon arrowIconFill="#fff" fill="#FC702F" />
             </div>
           </div>
@@ -53,6 +53,9 @@ const FeatureContestBanner = () => {
             <div className="pr-6">
               <Countdown targetDate={new Date()} />
             </div>
+          </div>
+          <div className="flex w-full md:hidden mt-10 justify-end items-end ">
+            <StarButtonIcon size="100" arrowIconFill="#fff" fill="#FC702F" />
           </div>
         </div>
       </div>

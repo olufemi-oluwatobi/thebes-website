@@ -54,7 +54,7 @@ const HowItWorksSection = () => {
       </div> */}
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start justify-between">
         <div className="flex-1">
-          <div className="bg-primary px-8 py-20 rounded-3xl">
+          <div className="bg-primary py-10 px-4 md:px-8 md:py-20 rounded-3xl">
             {contests.map((contest, index) => (
               <ScheduleItem
                 className="mb-5"
@@ -68,7 +68,7 @@ const HowItWorksSection = () => {
             <h3 className="font-serif text-3xl mt-20 text-left font-bold w-3/4  mb-4">
               Schedule-Based Contests
             </h3>
-            <p className="font-sans mt-4 text-[#5a585e] text-xl">
+            <p className="font-sans mt-4 text-[#5a585e] text-md md:text-xl">
               Discover and participate in a year-long calendar of themed
               contests across various art forms.
             </p>
@@ -76,19 +76,19 @@ const HowItWorksSection = () => {
         </div>
 
         {/* Right Side */}
-        <div className="flex-1 ml-5 mt-10 md:mt-0 ">
+        <div className="flex-1 md:ml-5 mt-10 md:mt-0 ">
           <div className="mb-6 max-w-[400px] rounded-4xl">
-            <div className="bg-gray-100 p-8 px-8 pb-16  max-w-[400px]  rounded-3xl">
+            <div className="bg-gray-100 p-8 px-4 md:px-8  pb-16  max-w-[400px]  rounded-3xl">
               <h3 className="font-serif font-bold text-4xl mb-4">
                 Fair & Inclusive Algorithms
               </h3>
-              <p className="font-sans text-sm">
+              <p className="font-sans text-md  md:text-sm">
                 Every submission is showcased to all users, ensuring equal
                 opportunity and recognition for all artists.
               </p>
             </div>
           </div>
-          <div className="bg-brown h-full max-h-[500px] max-w-[400px] p-8 px-8 pb-16  rounded-3xl">
+          <div className="bg-brown h-full max-h-[500px] max-w-[400px] p-4 md:p-8 px-4 md:px-8 pb-16  rounded-3xl">
             <div className=" h-36 ">
               <VideoCard src="https://thebesuserupload.s3.us-east-2.amazonaws.com/site_assets/6875748-hd_1080_2048_25fps.gif" />
             </div>
