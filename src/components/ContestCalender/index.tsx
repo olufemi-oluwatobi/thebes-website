@@ -23,17 +23,17 @@ const contests = [
 const Calendar: React.FC = () => {
   return (
     <div className="space-y-4 pb-32  flex flex-col justify-center items-center bg-brown my-10 w-full px-[7%] ">
-      <section className="w-full  py-20 text-black   flex items-center justify-between">
+      <section className="w-full py-20 pb-0 md:pb-20  text-black   flex flex-col md:flex-row items-center justify-between">
         <div className="   ">
           <div className=" font-sans text-xl text-primary font-semibold text-left ">
             PILOT CALENDER
           </div>
-          <div className=" mt-12 w-4/6 text-white font-bold  text-8xl   font-serif text-left  ">
+          <div className=" mt-12 w-full md:w-4/6 text-white font-bold text-4xl  md:text-7xl   font-serif text-left  ">
             Get recognised from anywhere around the world
           </div>
         </div>
-        <div className=" self-end flex align-baseline   w-2/5">
-          <div className=" text-gray-200  font-medium text-2xl text-left w-[80%] leading-12 ">
+        <div className=" self-end flex align-baseline mt-8 md:mt-0  w-full  md:w-3/5">
+          <div className=" text-gray-200  font-medium text-lg md:text-2xl text-left w-full md:w-[80%] leading-12 ">
             Thebes also known as “The Social Contest Network” is a platform that
             organizes contests across all works of art. Thebes also has an app
             where users can watch these contests, vote, and eject and determine

@@ -35,10 +35,10 @@ const FeatureContestBanner = () => {
           </div>
           <div className="w-full flex justify-between ">
             <div className=" ">
-              <h1 className="text-[4rem] leading-tight font-bold mb-3 w-[70%]">
+              <h1 className="text-[4rem] font-serif leading-tight font-bold mb-3 w-[70%]">
                 Streetwear Fashion Design Contest
               </h1>
-              <p className="font-bold text-gray-200 mb-8 mt-2 w-[40%]">
+              <p className="font-bold font-sans text-gray-200 mb-8 mt-2 w-[40%]">
                 Join our community of creators. Download Thebes now and shine on
                 the
                 {"world's"} most inclusive Social Contest Network!

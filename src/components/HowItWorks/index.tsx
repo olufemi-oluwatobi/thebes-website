@@ -45,13 +45,13 @@ const HowItWorksSection = () => {
   }, []);
 
   return (
-    <section className="bg-white flex flex-col items-center mt-10 py-10 px-5">
-      <div className=" font-sans text-xl mb-3 text-primary font-semibold text-left ">
+    <section className="bg-white flex flex-col items-center mb-10 px-5">
+      {/* <div className=" font-sans text-xl mb-3 text-primary font-semibold text-left ">
         HOW IT WORKS
       </div>
       <div className=" mb-20  font-bold  text-6xl   font-serif ">
         Your Ticket To Get Started
-      </div>
+      </div> */}
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start justify-between">
         <div className="flex-1">
           <div className="bg-primary px-8 py-20 rounded-3xl">
@@ -65,7 +65,7 @@ const HowItWorksSection = () => {
                 iconSrc={contest.iconSrc}
               />
             ))}
-            <h3 className="font-serif text-5xl mt-20 text-left font-bold w-3/4  mb-4">
+            <h3 className="font-serif text-3xl mt-20 text-left font-bold w-3/4  mb-4">
               Schedule-Based Contests
             </h3>
             <p className="font-sans mt-4 text-[#5a585e] text-xl">
@@ -76,7 +76,7 @@ const HowItWorksSection = () => {
         </div>
 
         {/* Right Side */}
-        <div className="flex-1 ml-10 mt-10 md:mt-0 ">
+        <div className="flex-1 ml-5 mt-10 md:mt-0 ">
           <div className="mb-6 max-w-[400px] rounded-4xl">
             <div className="bg-gray-100 p-8 px-8 pb-16  max-w-[400px]  rounded-3xl">
               <h3 className="font-serif font-bold text-4xl mb-4">
@@ -103,12 +103,12 @@ const HowItWorksSection = () => {
         </div>
       </div>
 
-      <div className=" mt-32 flex justify-center">
+      {/* <div className=" mt-32 flex justify-center">
         <button className="flex font-xl justify-center items-center bg-transparent text-black font-semibold py-4 px-12 border-2 border-black rounded-full">
           Join Waitlist
           <ArrowUpRight strokeWidth={2.5} className="w-5 h-5 font-bold ml-2" />
         </button>
-      </div>
+      </div> */}
     </section>
   );
 };

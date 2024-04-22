@@ -33,7 +33,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
   }, []);
 
   return (
-    <div className="flex items-center justify-center space-x-3  text-gray-200 p-2 rounded">
+    <div className="flex items-start md:items-center md:justify-center space-x-3  text-gray-200 md:p-2 rounded">
       <div className="text-center">
         <p className="text-3xl font-bold">
           {String(timeLeft.daysLeft).padStart(2, "0")}
