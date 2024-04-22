@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useRef } from "react";
+import LogoIcon from "@/icons/logo";
 import ImageCard from "@/components/sections/HeroSection/ImageCard";
 import { useEffect } from "react";
 import ArrowUpRight from "@/icons/arrow-up-right";
@@ -87,8 +88,8 @@ const HeroSection = () => {
 
   return (
     <div className="w-full overflow-x-hidden bg-brown text-white mx-auto px-4 sm:px-6 lg:px-8">
-      <header className="flex justify-between items-center py-6">
-        <h1 className="text-4xl font-serif font-extrabold">Thebes.</h1>
+      <header className="flex justify-between items-center ">
+        <LogoIcon width="300" height="200" />
         <button className="flex font-xl font-sans justify-center items-center bg-transparent text-white font-semibold py-2 md:py-4 px-4 md:px-12 border-2 border-white rounded-full">
           Join Waitlist
           <ArrowUpRight strokeWidth={2.5} className="w-5 h-5 font-bold ml-2" />
