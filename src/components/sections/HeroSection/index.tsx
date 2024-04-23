@@ -103,7 +103,7 @@ const HeroSection = () => {
             WELCOME TO THEBES
           </span>
         </h4>
-        <h2 className="text-5xl md:text-8xl mt-4 md:w-3/5 xl:w-2/5 font-extrabold mb-6 font-serif leading-tight">
+        <h2 className=" text-2xl md:text-8xl mt-4  md:w-3/5 xl:w-2/5 font-extrabold mb-6 font-serif leading-tight">
           The Social Contest Network
         </h2>
         <button className="flex font-semibold font-xl justify-center items-center mt-4 bg-primary text-brown py-4 px-12  rounded-full">
