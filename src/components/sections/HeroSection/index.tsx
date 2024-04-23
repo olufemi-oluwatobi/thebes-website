@@ -107,10 +107,10 @@ const HeroSection = () => {
           The Social Contest Network
         </h2>
         <span className=" text-gray-200 text-md md:text-lg mb-4 w-[90%]  md:w-2/4 font-sans">
-          Got talent? Step up to Thebes, where we host competitions for creators
-          across various fields. Engage in contests spanning singing, dancing,
-          acting, film making, card games, chess etc each crafted for you to
-          compete and win rewards.
+          Got talent? Step up to Thebes, the social network where contests are
+          hosted across various fields. Engage in contests spanning singing,
+          dancing, acting, film making, card games, chess etc each crafted for
+          you to compete and win rewards.
         </span>
         <button className="flex font-semibold font-xl justify-center items-center mt-4 bg-primary text-brown py-4 px-12  rounded-full">
           <span className="font-3 xl font-sans">Download App</span>
