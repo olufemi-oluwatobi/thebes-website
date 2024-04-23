@@ -116,15 +116,17 @@ const HeroSection = () => {
           <span className="font-3 xl font-sans">Download App</span>
           <ArrowUpRight strokeWidth={2.5} className="w-5 h-5 font-bold ml-2" />
         </button>
+        <div>
+          <div
+            className=" overflow-hidden mt-32 md:mt-32 left-0 flex gap-12"
+            ref={scrollRef}
+          >
+            {images.concat(images).map((item, idx) => (
+              <ImageCard image={item.url} key={idx} />
+            ))}
+          </div>
+        </div>
       </main>
-      <div
-        className=" overflow-hidden mt-32 md:mt-32 pb-20 left-0 flex gap-12"
-        ref={scrollRef}
-      >
-        {images.concat(images).map((item, idx) => (
-          <ImageCard image={item.url} key={idx} />
-        ))}
-      </div>
     </div>
   );
 };
