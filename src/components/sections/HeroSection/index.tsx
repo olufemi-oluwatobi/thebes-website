@@ -97,28 +97,34 @@ const HeroSection = () => {
           <ArrowUpRight strokeWidth={2.5} className="w-5 h-5 font-bold ml-2" />
         </button>
       </header>
-      <main className="flex flex-col text-center items-center justify-center mt-10 mb-20">
+      <main className="flex flex-col space-y-5 text-center items-center justify-center mt-10 mb-20">
         <h4>
-          <span className="text-white font-bold text-lg md:text-xl mb-4 capitalize font-sans">
+          <span className="text-white font-bold text-lg md:text-xl capitalize font-sans">
             WELCOME TO THEBES
           </span>
         </h4>
-        <h2 className=" text-3xl md:text-5xl xl:text-8xl mt-4  md:w-3/5 xl:w-2/5 font-extrabold mb-6 font-serif leading-tight">
+        <h2 className=" text-3xl md:text-5xl xl:text-8xl mt-4  md:w-3/5 xl:w-2/5 font-extrabold font-serif leading-tight">
           The Social Contest Network
         </h2>
+        <span className=" text-gray-100 text-md md:text-lg mb-4 w-3/4  md:w-2/4 font-sans">
+          Got talent? Step up to Thebes, where we host competitions for creators
+          across various fields. Engage in contests spanning singing, rapping,
+          dancing, acting, card games, chess etc each crafted for you to compete
+          and win rewards.
+        </span>
         <button className="flex font-semibold font-xl justify-center items-center mt-4 bg-primary text-brown py-4 px-12  rounded-full">
           <span className="font-3 xl font-sans">Download App</span>
           <ArrowUpRight strokeWidth={2.5} className="w-5 h-5 font-bold ml-2" />
         </button>
-        <div
-          className=" overflow-hidden mt-12 md:mt-32 left-0 flex gap-12"
-          ref={scrollRef}
-        >
-          {images.concat(images).map((item, idx) => (
-            <ImageCard image={item.url} key={idx} />
-          ))}
-        </div>
       </main>
+      <div
+        className=" overflow-hidden mt-32 md:mt-32 pb-20 left-0 flex gap-12"
+        ref={scrollRef}
+      >
+        {images.concat(images).map((item, idx) => (
+          <ImageCard image={item.url} key={idx} />
+        ))}
+      </div>
     </div>
   );
 };
