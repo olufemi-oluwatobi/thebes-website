@@ -41,7 +41,7 @@ const ContestCalendarItem: React.FC<ContestCalendarItemProps> = ({
     <div
       className={`text-white border-b my-10 border-gray-200 md:px-4 py-8 flex flex-col md:flex-row justify-between items-center ${styles.contestItem}`}
     >
-      <div className="flex flex-col w-full md:flex-row items-start md:items-center md:pb-10 ">
+      <div className="flex flex-col  md:flex-row items-start md:items-center md:pb-10 ">
         <div className="flex  items-center text-gray-200 font-bold text-2xl">
           {String(serialNumber).padStart(2, "0")}
           <span className=" md:hidden font-serif ml-2 text-white text-2xl md:text-7xl font-bold  ">

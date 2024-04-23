@@ -8,7 +8,7 @@ import FeatureContestBanner from "@/components/FeatureContestBanner";
 
 export default function Home() {
   return (
-    <main className="flex bg-white w-screen text-brown font-sans min-h-screen flex-col ">
+    <main className="flex bg-white overflow-x-hidden  w-screen text-brown font-sans min-h-screen flex-col ">
       <HeroSection />
       <AboutSection />
       <HowItWorksSection />

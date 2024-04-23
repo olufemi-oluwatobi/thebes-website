@@ -87,12 +87,12 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="w-full overflow-x-hidden bg-brown text-white mx-auto px-4 sm:px-6 lg:px-8">
-      <header className="flex my-10  justify-between items-center ">
+    <div className="w-full overflow-x-hidden bg-brown text-white mx-auto ">
+      <header className="flex my-8 px-[2.5%] justify-between items-center ">
         <div className="">
           <LogoIcon />
         </div>
-        <button className="flex font-xl font-sans justify-center items-center bg-transparent text-white font-semibold py-2 md:py-4 px-4 md:px-12 border-2 border-white rounded-full">
+        <button className="hidden md:flex font-xl font-sans justify-center items-center bg-transparent text-white font-semibold py-2 md:py-4 px-4 md:px-12 border-2 border-white rounded-full">
           Join Waitlist
           <ArrowUpRight strokeWidth={2.5} className="w-5 h-5 font-bold ml-2" />
         </button>
@@ -103,7 +103,7 @@ const HeroSection = () => {
             WELCOME TO THEBES
           </span>
         </h4>
-        <h2 className="text-5xl md:text-8xl mt-4 md:w-2/5 font-extrabold mb-6 font-serif leading-tight">
+        <h2 className="text-5xl md:text-8xl mt-4 md:w-3/5 xl:w-2/5 font-extrabold mb-6 font-serif leading-tight">
           The Social Contest Network
         </h2>
         <button className="flex font-semibold font-xl justify-center items-center mt-4 bg-primary text-brown py-4 px-12  rounded-full">

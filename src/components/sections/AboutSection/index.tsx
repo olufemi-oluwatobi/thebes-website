@@ -1,6 +1,6 @@
 const AboutSection = () => {
   return (
-    <section className="w-full p-[5%] text-black flex-col md:flex-row   flex items-center justify-between">
+    <section className="w-full p-[2.5%] text-black flex-col md:flex-row   flex items-center justify-between">
       <div className="   ">
         <div className=" font-sans text-xl mt-8 text-purple font-semibold text-left ">
           ABOUT THEBES
