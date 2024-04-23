@@ -1,11 +1,11 @@
 const AboutSection = () => {
   return (
-    <section className="w-full p-[2.5%] text-black flex-col md:flex-row   flex items-center justify-between">
+    <section className="w-full px-[5%] md:px-[2.5%] py-8 text-black flex-col md:flex-row   flex items-center justify-between">
       <div className="   ">
         <div className=" font-sans text-xl mt-8 text-purple font-semibold text-left ">
           ABOUT THEBES
         </div>
-        <div className=" mt-12 w-full md:w-4/6 font-bold text-4xl  md:text-6xl   font-serif text-left  ">
+        <div className=" mt-2 w-full md:w-4/6 font-bold text-4xl  md:text-6xl   font-serif text-left  ">
           Express Your Creativity & Win Big
         </div>
       </div>

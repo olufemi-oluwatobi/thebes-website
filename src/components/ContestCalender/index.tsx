@@ -22,13 +22,13 @@ const contests = [
 
 const Calendar: React.FC = () => {
   return (
-    <div className="space-y-4 pb-32  flex flex-col justify-center items-center bg-brown my-10 w-full px-[2.5%] ">
-      <section className="w-full py-20 pb-0 md:pb-20  text-black   flex flex-col md:flex-row items-center justify-between">
+    <div className="space-y-4 pb-32  flex flex-col justify-center items-center bg-brown my-10 w-full  px-[5%] md:px-[2.5%] py-16 ">
+      <section className="w-full  md:pb-20  text-black   flex flex-col md:flex-row items-center justify-between">
         <div className="   ">
           <div className=" font-sans text-xl text-primary font-semibold text-left ">
             PILOT CALENDER
           </div>
-          <div className=" mt-12 w-full md:w-4/6 text-white font-bold text-4xl  md:text-7xl   font-serif text-left  ">
+          <div className=" mt-2 w-full md:w-4/6 text-white font-bold text-4xl  md:text-7xl   font-serif text-left  ">
             Get recognised from anywhere around the world
           </div>
         </div>

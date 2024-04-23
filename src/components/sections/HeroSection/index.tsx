@@ -88,7 +88,7 @@ const HeroSection = () => {
 
   return (
     <div className="w-full overflow-x-hidden bg-brown text-white mx-auto ">
-      <header className="flex my-8 px-[2.5%] justify-between items-center ">
+      <header className="flex my-8 px-[5%] md:px-[2.5%] justify-between items-center ">
         <div className="">
           <LogoIcon />
         </div>
