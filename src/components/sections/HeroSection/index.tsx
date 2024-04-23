@@ -106,7 +106,7 @@ const HeroSection = () => {
         <h2 className=" text-3xl md:text-5xl xl:text-8xl mt-4  md:w-3/5 xl:w-2/5 font-extrabold font-serif leading-tight">
           The Social Contest Network
         </h2>
-        <span className=" text-gray-100 text-md md:text-lg mb-4 w-3/4  md:w-2/4 font-sans">
+        <span className=" text-gray-200 text-md md:text-lg mb-4 w-[90%]  md:w-2/4 font-sans">
           Got talent? Step up to Thebes, where we host competitions for creators
           across various fields. Engage in contests spanning singing, rapping,
           dancing, acting, card games, chess etc each crafted for you to compete
