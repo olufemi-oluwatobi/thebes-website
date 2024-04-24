@@ -16,26 +16,38 @@ const HeroSection = () => {
     {
       url: "https://thebesuserupload.s3.us-east-2.amazonaws.com/site_assets/Recangle+(1).png",
       alt: "Person crafting pottery",
+      width: 380,
+      height: 336,
     },
     {
       url: "https://thebesuserupload.s3.us-east-2.amazonaws.com/site_assets/Star+2.png",
       alt: "Musician playing keyboard",
+      width: 328,
+      height: 328,
     },
     {
       url: "https://thebesuserupload.s3.us-east-2.amazonaws.com/site_assets/Recangle+(2).png",
       alt: "Person filming with phone on tripod",
+      width: 400,
+      height: 326,
     },
     {
       url: "https://thebesuserupload.s3.us-east-2.amazonaws.com/site_assets/Recangle+(3).png",
       alt: "Person wearing a colorful outfit with neon lights",
+      width: 400,
+      height: 336,
     },
     {
       url: "https://thebesuserupload.s3.us-east-2.amazonaws.com/site_assets/Ellipse+2.png",
       alt: "Person holding a camera",
+      width: 336,
+      height: 336,
     },
     {
       url: "https://thebesuserupload.s3.us-east-2.amazonaws.com/site_assets/Star+1+(1).png",
       alt: "Person holding a camera",
+      width: 328,
+      height: 328,
     },
   ];
 
@@ -122,7 +134,12 @@ const HeroSection = () => {
             ref={scrollRef}
           >
             {images.concat(images).map((item, idx) => (
-              <ImageCard image={item.url} key={idx} />
+              <ImageCard
+                width={item.width}
+                height={item.height}
+                image={item.url}
+                key={idx}
+              />
             ))}
           </div>
         </div>

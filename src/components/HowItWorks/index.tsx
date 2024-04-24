@@ -9,25 +9,31 @@ import VideoCard from "./VideoCard";
 const contests = [
   {
     contestName: "Singing duo contest",
-    date: "May 2020",
+    date: "May 1st, 2020",
     iconSrc:
       "https://thebesuserupload.s3.us-east-2.amazonaws.com/site_assets/%F0%9F%91%9C+Handbag.svg",
   },
   {
     contestName: "Acting contest",
-    date: "May 2020",
+    date: "June, 2020",
     iconSrc:
       "https://thebesuserupload.s3.us-east-2.amazonaws.com/site_assets/%F0%9F%8E%AD+Performing+arts.svg",
   },
   {
+    contestName: "Dance contest",
+    date: " 2020",
+    iconSrc:
+      "https://thebesuserupload.s3.us-east-2.amazonaws.com/site_assets/%F0%9F%92%83+Woman+dancing.svg",
+  },
+  {
     contestName: "Fall Fashion Contest",
-    date: "May 2020",
+    date: "October 2020",
     iconSrc:
       "https://thebesuserupload.s3.us-east-2.amazonaws.com/site_assets/%F0%9F%91%9C+Handbag.svg",
   },
   {
     contestName: "Dance contest",
-    date: "May 2020",
+    date: " 2020",
     iconSrc:
       "https://thebesuserupload.s3.us-east-2.amazonaws.com/site_assets/%F0%9F%92%83+Woman+dancing.svg",
   },
@@ -45,7 +51,7 @@ const HowItWorksSection = () => {
   }, []);
 
   return (
-    <section className="bg-white flex flex-col items-center my-10 px-5">
+    <section className="bg-white flex flex-col items-center my-24 px-5">
       {/* <div className=" font-sans text-xl mb-3 text-primary font-semibold text-left ">
         HOW IT WORKS
       </div>
