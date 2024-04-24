@@ -8,25 +8,25 @@ import VideoCard from "./VideoCard";
 
 const contests = [
   {
-    contestName: "Microphone Studio Challenge",
+    contestName: "Singing duo contest",
     date: "May 2020",
     iconSrc:
       "https://thebesuserupload.s3.us-east-2.amazonaws.com/site_assets/%F0%9F%91%9C+Handbag.svg",
   },
   {
-    contestName: "Performing Arts Showdown",
+    contestName: "Acting contest",
     date: "May 2020",
     iconSrc:
       "https://thebesuserupload.s3.us-east-2.amazonaws.com/site_assets/%F0%9F%8E%AD+Performing+arts.svg",
   },
   {
-    contestName: "Designer Handbag Runway",
+    contestName: "Fall Fashion Contest",
     date: "May 2020",
     iconSrc:
       "https://thebesuserupload.s3.us-east-2.amazonaws.com/site_assets/%F0%9F%91%9C+Handbag.svg",
   },
   {
-    contestName: "Dance Off Extravaganza",
+    contestName: "Dance contest",
     date: "May 2020",
     iconSrc:
       "https://thebesuserupload.s3.us-east-2.amazonaws.com/site_assets/%F0%9F%92%83+Woman+dancing.svg",

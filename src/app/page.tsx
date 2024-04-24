@@ -12,6 +12,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <HowItWorksSection />
+
       <Calendar />
       <FAQSection />
       <div className="relative w-full mt-8">

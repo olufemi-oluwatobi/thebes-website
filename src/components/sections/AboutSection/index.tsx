@@ -10,7 +10,7 @@ const AboutSection = () => {
         </div>
       </div>
       <div className=" self-end flex align-baseline  w-full  md:w-2/5">
-        <div className=" text-gray-200 mt-4 md:mt-0  font-medium text-lg md:text-2xl text-left w-full md:w-[80%] leading-12 ">
+        <div className=" text-gray-200 text-md md:text-xl text-left w-full md:w-[80%] leading-12 ">
           Thebes also known as “The Social Contest Network” is a platform that
           organizes contests across all works of art. Thebes also has an app
           where users can watch these contests, vote, and eject and determine

@@ -42,9 +42,12 @@ const ScheduleItem: React.FC<ScheduleItemProps> = ({
               <div className="w-4 md:w-12 h-4 ml-2 bg-[#F1F1F1] rounded-md  animate-pulse" />
             </div>
           ) : (
-            <span className=" text-sm md:text-md font-bold font-serif ">
+            <div
+              style={{ textOverflow: "ellipsis" }}
+              className="text-sm md:text-md font-bold w-[55%] md:w-auto font-serif text-ellipsis overflow-hidden whitespace-nowrap"
+            >
               {contestName}
-            </span>
+            </div>
           )}
         </div>
       </div>
