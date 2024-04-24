@@ -45,7 +45,7 @@ const HowItWorksSection = () => {
   }, []);
 
   return (
-    <section className="bg-white flex flex-col items-center mb-10 px-5">
+    <section className="bg-white flex flex-col items-center my-10 px-5">
       {/* <div className=" font-sans text-xl mb-3 text-primary font-semibold text-left ">
         HOW IT WORKS
       </div>
