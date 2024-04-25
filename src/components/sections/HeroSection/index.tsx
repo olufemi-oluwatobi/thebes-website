@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useRef } from "react";
+import Image from "next/image";
 import LogoIcon from "@/icons/logo";
 import ImageCard from "@/components/sections/HeroSection/ImageCard";
 import { useEffect } from "react";
@@ -109,7 +110,7 @@ const HeroSection = () => {
           <ArrowUpRight strokeWidth={2.5} className="w-5 h-5 font-bold ml-2" />
         </button>
       </header>
-      <main className="flex flex-col space-y-5 text-center items-center justify-center mt-10 mb-20">
+      <main className="flex flex-col space-y-10 text-center items-center justify-center mt-10 ">
         <h4>
           <span className="text-white font-bold text-lg md:text-xl capitalize font-sans">
             WELCOME TO THEBES
@@ -124,11 +125,12 @@ const HeroSection = () => {
           dancing, acting, film making, card games, chess etc each crafted for
           you to compete and win rewards.
         </span>
-        <button className="flex font-semibold font-xl justify-center items-center mt-4 bg-primary text-brown py-4 px-12  rounded-full">
+        <button className="flex  font-semibold font-xl justify-center items-center mt-4 bg-primary text-brown py-4 px-12  rounded-full">
           <span className="font-3 xl font-sans">Download App</span>
           <ArrowUpRight strokeWidth={2.5} className="w-5 h-5 font-bold ml-2" />
         </button>
-        <div>
+
+        {/* <div>
           <div
             className=" overflow-hidden mt-32 md:mt-32 left-0 flex gap-12"
             ref={scrollRef}
@@ -142,8 +144,17 @@ const HeroSection = () => {
               />
             ))}
           </div>
-        </div>
+        </div> */}
       </main>
+      <div className="w-full mt-24 ">
+        <Image
+          height={699}
+          width={2550}
+          objectFit={"contain"}
+          alt="alt image"
+          src="https://thebesuserupload.s3.us-east-2.amazonaws.com/site_assets/main+banner/main_banner_2+(1)+(1).png"
+        />
+      </div>
     </div>
   );
 };

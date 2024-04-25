@@ -12,7 +12,7 @@ const config: Config = {
       serif: "var(--font-serif)",
     },
     colors: {
-      brown: "#0F0A0A",
+      brown: "#050515",
       red: "#E31D1C",
       primary: "#D0BCFF",
       white: "#FFFFFF",
