@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import React, { HTMLAttributes } from "react";
 import style from "./ScheduleItem.module.css";
 

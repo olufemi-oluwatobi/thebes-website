@@ -22,7 +22,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content }) => {
           isOpen && " border-l-4 border-purple"
         } justify-between items-center font-semibold p-6 cursor-pointer`}
       >
-        <span className=" font-bold text-xl font-sans ">{title}</span>
+        <span className="  font-bold text-xl font-sans ">{title}</span>
         <svg
           className={`fill-current text-purple h-6 w-6 transform transition-transform duration-500 ${
             isOpen ? "rotate-180" : ""

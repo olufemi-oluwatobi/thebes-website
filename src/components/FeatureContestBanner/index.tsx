@@ -1,5 +1,5 @@
 // FeatureContestBanner.tsx
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Countdown from "../ContestCalender/CalenderItem/Countdown";
 import StarButtonIcon from "@/icons/star_button_icon";
 

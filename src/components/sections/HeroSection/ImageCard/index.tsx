@@ -15,14 +15,14 @@ const Card: React.FC<CardProps> = ({ image, height, width }) => {
 
   return (
     <div
-      className={`relative overflow-hidden   bg-slate-400 rounded-xl flex justify-center items-center`}
+      className={`relative overflow-hidden h-[250px] min-w-[300px] md:h-[350px] md:min-w-[400px] bg-slate-400 rounded-xl flex justify-center items-center`}
     >
       <Image
         width={width}
         height={height}
-        layout="responsive"
         src={image}
         alt={`Image of ${image}`}
+        layout="fill"
       />
     </div>
   );
