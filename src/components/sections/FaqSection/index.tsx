@@ -4,24 +4,29 @@ import AccordionItem from "@/components/ui/Accordion";
 
 const faqData = [
   {
-    title: "When will my order arrive?",
+    title: "What types of contests can I participate in on Thebes?",
     content:
-      "Shipping time is set by our delivery partners, according to the delivery method chosen by you. Additional details can be found in the order confirmation.",
+      "At Thebes, we offer a wide array of contests across various art forms including visual arts, music, dance, and digital multimedia. Whether you excel in painting, singing, choreography, or digital creation, Thebes has a stage for you. Our contests range from regional to global competitions, with formats like head-to-head battles, themed challenges, and multi-stage events.",
   },
   {
-    title: "When will my order arrive?",
+    title: "How do the contests work",
     content:
-      "Shipping time is set by our delivery partners, according to the delivery method chosen by you. Additional details can be found in the order confirmation.",
+      "Each contest on Thebes is structured into multiple stages, starting with Stage Zero, which serves as a preliminary round. During this stage, creators submit their entries within a specified period. Once submissions close, the voting phase begins, allowing the audience to vote for their favorites. After the voting period ends, the top-ranked creators advance to the next stage, bringing them one step closer to winning the contest. Each subsequent stage follows a similar format, culminating in a final showdown where the ultimate winners are decided.",
   },
   {
-    title: "When will my order arrive?",
+    title: " How are winners determined in Thebes contests?",
     content:
-      "Shipping time is set by our delivery partners, according to the delivery method chosen by you. Additional details can be found in the order confirmation.",
+      "Winners in Thebes contests are determined by audience votes. This ensures that all participants are judged fairly on the merit of their work rather than popularity. Each contest may involve multiple rounds, allowing the community to vote and decide who advances to the next stage, culminating in a grand finale.",
   },
   {
-    title: "When will my order arrive?",
+    title: "Can anyone join Thebes, and how do I sign up?",
     content:
-      "Shipping time is set by our delivery partners, according to the delivery method chosen by you. Additional details can be found in the order confirmation.",
+      "Yes, Thebes is open to artists and creative minds from all domains. To join, simply visit our website, click on the sign-up button, and follow the instructions to register. Whether you're a creator looking to compete or an enthusiast eager to vote and support, there’s a place for you in our community.",
+  },
+  {
+    title: "How does Thebes support creators financially?",
+    content:
+      "Creators on Thebes benefit from ad revenue sharing, contest prizes, and viewer donations, providing multiple sources of income from their activities on the platform. ",
   },
   // ... add other FAQ items here
 ];
