@@ -4,7 +4,7 @@ import LogoIcon from "@/icons/logo";
 
 const Footer = () => {
   return (
-    <footer className="bg-brown text-purlpe px-[5%] md:px-[2.5%]  pb-12 min-h-[400px] text-center flex justify-between items-end">
+    <footer className="bg-brown text-purple px-[5%] md:px-[2.5%]  pb-12 min-h-[400px] text-center flex justify-between items-end">
       <LogoIcon fill="#D0BCFF" />
       <div className="flex text-left  ">
         <nav className="flex gap-4 flex-col text-primary">

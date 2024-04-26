@@ -22,7 +22,7 @@ const contests = [
 
 const Calendar: React.FC = () => {
   return (
-    <div className="space-y-4 flex flex-col justify-center items-center bg-brown my-10 w-full px-[5%] py-32 ">
+    <div className="space-y-4 flex flex-col justify-center items-center bg-brown my-10 w-full px-[5%] py-[5%] ">
       <section className="w-full  md:pb-20  text-black   flex flex-col md:flex-row items-center justify-between">
         <div className="   ">
           <div className=" font-sans text-xl text-primary font-semibold text-left ">

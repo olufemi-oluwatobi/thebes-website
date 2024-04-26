@@ -33,7 +33,7 @@ const faqData = [
 
 const FAQSection: React.FC = () => {
   return (
-    <main className="bg-white flex flex-col items-center px-[5%] py-32">
+    <main className="bg-white flex flex-col items-center px-[5%] py-[5%] ">
       <div className=" font-sans text-xl mb-3 text-purple font-semibold text-left ">
         FAQ
       </div>
