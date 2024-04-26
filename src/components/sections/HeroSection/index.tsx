@@ -120,9 +120,9 @@ const HeroSection = () => {
           The Social Contest Network
         </h2>
         <span className=" text-gray-200 text-md md:text-lg mt-4 mb-8 w-[90%]  md:w-2/4 font-sans">
-          Got talent? Step up to Thebes and compete on the world stage. Engage
-          in video based contests across all artforms such as singing, dancing,
-          fashion, acting, storytelling, animation and more.
+          Got talent? Take it to Thebes and shine globally. Dive into
+          video-based contests spanning singing, dancing, fashion, acting,
+          storytelling, animation, and beyond. Win votes, hearts and prizes.
         </span>
         <button className="flex  font-semibold font-xl justify-center items-center mt-4 bg-primary text-brown py-4 px-12  rounded-full">
           <span className="font-3 xl font-sans">Join Waiting List</span>

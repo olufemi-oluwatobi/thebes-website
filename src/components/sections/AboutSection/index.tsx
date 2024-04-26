@@ -11,10 +11,15 @@ const AboutSection = () => {
       </div>
       <div className=" self-end flex align-baseline  w-full  md:w-2/5">
         <div className=" text-gray-200 text-md md:text-xl mt-5 lg:mt-0 text-left w-full md:w-[80%] leading-12 ">
-          Thebes also known as “The Social Contest Network” is a platform that
-          organizes contests across all works of art. Thebes also has an app
-          where users can watch these contests, vote, and eject and determine
-          the winner of each contest.
+          Thebes serves as a mobile arena where creativity and competition
+          converge. We cater to artists and enthusiasts across a wide range of
+          disciplines—from painting and music to digital arts and
+          beyond—providing a platform where talent is recognized and rewarded.
+          Our mission is to connect diverse cultures through the universal
+          language of contest, offering both traditional art forms and engaging
+          social games. Through our app, participants can compete, audiences can
+          experience the spectacle, and together, determine the victors of each
+          contest.
         </div>
       </div>
     </section>
