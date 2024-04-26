@@ -22,7 +22,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content }) => {
           isOpen && " border-l-4 border-purple"
         } justify-between items-center font-semibold p-6 cursor-pointer`}
       >
-        <span className=" max-w-[80%]  font-bold text-md font-sans ">
+        <span className=" max-w-[80%]  font-bold text-md font-serif ">
           {title}
         </span>
         <svg

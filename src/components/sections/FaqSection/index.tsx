@@ -33,7 +33,7 @@ const faqData = [
 
 const FAQSection: React.FC = () => {
   return (
-    <main className="bg-white flex flex-col items-center py-10 pb-20  px-5">
+    <main className="bg-white flex flex-col items-center px-[5%] py-32">
       <div className=" font-sans text-xl mb-3 text-purple font-semibold text-left ">
         FAQ
       </div>
@@ -41,7 +41,7 @@ const FAQSection: React.FC = () => {
         {"We\u0027ve Got Answers To Your Questions"}
       </div>
       <div className="flex w-full justify-center items-start my-2">
-        <div className="w-full sm:w-10/12 md:w-1/2 my-1">
+        <div className="w-full sm:w-10/12 md:w-3/4 my-1">
           <ul className="flex  w-full flex-col">
             {faqData.map((faq, index) => (
               <AccordionItem

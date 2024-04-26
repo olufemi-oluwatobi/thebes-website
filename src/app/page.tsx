@@ -15,12 +15,12 @@ export default function Home() {
 
       <Calendar />
       <FAQSection />
-      <div className="relative w-full mt-8">
-        <div className="w-full flex justify-center bg-black bg-opacity-0 -mb-[40vh] md:-mb-[35vh] z-20 px-[5%] md:px-0">
+      <div className="relative w-full">
+        {/* <div className="w-full flex justify-center bg-black bg-opacity-0 -mb-[40vh] md:-mb-[35vh] z-20 px-[5%] md:px-0">
           <FeatureContestBanner />
-        </div>
+        </div> */}
 
-        <div className="w-full pt-20 z-10">
+        <div className="w-full ">
           <Footer />
         </div>
       </div>

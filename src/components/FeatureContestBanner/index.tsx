@@ -5,7 +5,7 @@ import StarButtonIcon from "@/icons/star_button_icon";
 
 const FeatureContestBanner = () => {
   return (
-    <div className="relative bg-black bg-opacity-0 rounded-3xl shadow-xl w-[1500px] h-[600px] md:h-[800px] overflow-hidden text-white">
+    <div className="relative bg-black bg-opacity-0 rounded-3xl shadow-xl w-[1500px] h-[600px] md:h-[70%] overflow-hidden text-white">
       <Image
         src="https://thebesuserupload.s3.us-east-2.amazonaws.com/site_assets/feature_contest.png"
         alt="Streetwear Fashion Design Contest"

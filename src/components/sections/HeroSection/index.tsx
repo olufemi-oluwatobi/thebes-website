@@ -110,7 +110,7 @@ const HeroSection = () => {
           <ArrowUpRight strokeWidth={2.5} className="w-5 h-5 font-bold ml-2" />
         </button>
       </header>
-      <main className="flex flex-col space-y-10 text-center items-center justify-center mt-10 ">
+      <main className="flex flex-col space-y-5 text-center items-center justify-center mt-10 ">
         <h4>
           <span className="text-white font-bold text-lg md:text-xl capitalize font-sans">
             WELCOME TO THEBES
