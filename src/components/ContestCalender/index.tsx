@@ -26,7 +26,7 @@ const Calendar: React.FC = () => {
       <section className="w-full  md:pb-20  text-black   flex flex-col md:flex-row items-center justify-between">
         <div className="   ">
           <div className=" font-sans text-md md:text-xl text-primary font-semibold text-left ">
-            PILOT CALENDER
+            2024 PILOT SEASON SCHEDULE
           </div>
           <div className=" mt-2 w-full md:w-4/6 text-white font-bold text-4xl  md:text-7xl   font-serif text-left  ">
             Get recognised from anywhere around the world
