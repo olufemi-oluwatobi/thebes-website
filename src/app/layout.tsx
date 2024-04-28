@@ -12,8 +12,9 @@ const libre = Libre_Baskerville({
 export const metadata: Metadata = {
   title: "Thebes",
   description: "The Social Contest Network",
-  icons: ["https://thebesuserupload.s3.us-east-2.amazonaws.com/site_assets/logo_crown.png"]
-
+  icons: {
+    icon: "https://thebesuserupload.s3.us-east-2.amazonaws.com/site_assets/logo_crown.png",
+  },
 };
 
 export default function RootLayout({
