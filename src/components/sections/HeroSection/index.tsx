@@ -116,10 +116,10 @@ const HeroSection = () => {
             WELCOME TO THEBES
           </span>
         </h4>
-        <h2 className=" text-white text-3xl md:text-4xl xl:text-4xl 2xl:text-8xl mt-4  md:w-3/5 xl:w-1/2 font-extrabold font-serif leading-tight">
+        <h2 className=" text-white text-3xl md:text-4xl xl:text-6xl 2xl:text-8xl mt-4  md:w-3/5 xl:w-1/2 font-extrabold font-serif leading-tight">
           The Contest Network
         </h2>
-        <span className=" text-gray-200 text-md md:text-lg mt-4 mb-8 w-[90%]  md:w-2/4 font-sans">
+        <span className=" text-gray-200 text-md xl:text-lg mt-4 mb-8 w-[90%]  md:w-2/4 font-sans">
           Got talent? Take it to Thebes and shine globally. Dive into
           video-based contests spanning singing, dancing, fashion, acting,
           storytelling, animation, and beyond. Win votes, hearts and prizes.

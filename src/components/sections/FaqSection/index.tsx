@@ -37,7 +37,7 @@ const FAQSection: React.FC = () => {
       <div className=" font-sans text-xl mb-3 text-purple font-semibold text-left ">
         FAQ
       </div>
-      <div className=" md:mb-20  font-bold text-4xl text-center w-full md:w-1/3   md:text-6xl   font-serif ">
+      <div className=" md:mb-20  font-bold text-4xl text-center w-full xl:w-2/3 2xl:w-1/3   md:text-6xl   font-serif ">
         {"We\u0027ve Got Answers To Your Questions"}
       </div>
       <div className="flex w-full justify-center items-start my-2">

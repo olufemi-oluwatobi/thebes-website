@@ -48,7 +48,7 @@ const ContestCalendarItem: React.FC<ContestCalendarItemProps> = ({
             {contestName}
           </span>
         </div>
-        <div className={` w-full md:w-auto md:mx-20 mt-4 md:mt-0 `}>
+        <div className={` w-full md:w-[250px] md:mx-20 mt-4 md:mt-0 `}>
           <Image
             layout="responsive"
             width={240}
@@ -59,7 +59,7 @@ const ContestCalendarItem: React.FC<ContestCalendarItemProps> = ({
             // Apply the styles for the image
           />
         </div>
-        <div className="text-white font-serif hidden md:flex text-2xl mt-2 md:mt-0 md:text-7xl font-bold">
+        <div className="text-white font-serif hidden md:flex text-2xl mt-2 md:mt-0 lg:text-5xl 2xl:text-7xl  font-bold">
           {contestName}
         </div>
       </div>
