@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Thebes",
   description: "The Social Contest Network",
   icons: {
-    icon: "https://thebesuserupload.s3.us-east-2.amazonaws.com/site_assets/logo_crown.png",
+    icon: "/favicon.ico",
   },
 };
 

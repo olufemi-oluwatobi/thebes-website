@@ -1,13 +1,12 @@
 @keyframes width-change {
-    from {
-      width: 100%;
-    }
-    to {
-      width: 100%;
-    }
+  from {
+    width: 100%;
   }
-  
-  .animate-width-change {
-    animation: width-change 300ms ease-in-out forwards;
+  to {
+    width: 100%;
   }
-  
+}
+
+.animate-width-change {
+  animation: width-change 300ms ease-in-out forwards;
+}
