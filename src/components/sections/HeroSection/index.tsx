@@ -124,10 +124,10 @@ const HeroSection = () => {
           video-based contests spanning singing, dancing, fashion, acting,
           storytelling, animation, and beyond. Win votes, hearts and prizes.
         </span>
-        <button className="flex  font-semibold font-xl justify-center items-center mt-4 bg-primary text-brown py-4 px-12  rounded-full">
+        {/* <button className="flex  font-semibold font-xl justify-center items-center mt-4 bg-primary text-brown py-4 px-12  rounded-full">
           <span className="font-3 xl font-sans">Join Waiting List</span>
           <ArrowUpRight strokeWidth={2.5} className="w-5 h-5 font-bold ml-2" />
-        </button>
+        </button> */}
 
         {/* <div>
           <div
