@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Thebes",
   description: "The Social Contest Network",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.ico?v=2", // Increment the version number here
   },
 };
 
